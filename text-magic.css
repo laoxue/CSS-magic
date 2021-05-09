@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@keyframes shining {
+    from {
+      background-position: -500%;
+    }
+    to {
+      background-position: 500%;
+    }
+  }
+.container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.container > .shining {
+    color: white;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    background-size: 80%;
+    background-clip: text;
+    background-repeat: no-repeat;
+    animation: shining 3s linear infinite;
+}
